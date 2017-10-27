@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Assignment 5</title>
+</head>
+<body>
+
+<svg width="600" height="600" viewBox="0 0 410 410"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <rect x="5" y="5" width="400" height="400" rx="15"
+          fill="url(#grey-gradient)"
+          stroke="black" stroke-width="1"></rect>
+    <rect x="45" y="45" width="320" height="320" rx="15"
+          fill="url(#grey-gradient)"
+          stroke="black" stroke-width="1"></rect>
+    <rect x="45" y="45" width="320" height="320" rx="15"
+          fill="url(#circle)"></rect>
+    <path d="M95,90 h220
+           a 15 15 0 0 1 15 15
+           v160
+           a 15 15 0 0 1 -15 15
+           h-80 v18 h80 v15 h-220 v-15 h80 v-18 h-80
+           a 15 15 0 0 1 -15 -15
+           v-160
+           a 15 15 0 0 1 15 -15"
+          stroke="black" stroke-width="1" fill="url(#grey-gradient)"></path>
+    <rect x="95" y="105" width="220" height="160" fill="url(#display-gradient)" stroke="black" stroke-width="1"></rect>
+    <text x="45" y="35"
+          font-family="Arial, sans-serif" font-size="24" font-weight="bold"
+          stroke="black" stroke-width="1"
+          fill="url(#text-gradient)">HOMEWORK</text>
+    <text font-family="Arial, sans-serif" font-size="24" font-weight="bold"
+          fill="white">
+        <textPath xlink:href="#text-path">IT-Academy</textPath>
+    </text>
+        <linearGradient id="grey-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ccc"></stop>
+            <stop offset="50%" stop-color="#666"></stop>
+            <stop offset="100%" stop-color="#ccc"></stop>
+        </linearGradient>
+        <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#bbb"></stop>
+            <stop offset="50%" stop-color="#666"></stop>
+            <stop offset="100%" stop-color="#bbb"></stop>
+        </linearGradient>
+        <pattern id="circle" width="14" height="14"
+                 patternUnits="userSpaceOnUse"
+                 patternTransform="rotate(45)"
+                 fill="transparent">
+            <circle cx="7" cy="7" r="5" fill="url(#circle-gradient)" stroke="black" stroke-width="0.5"></circle>
+        </pattern>
+        <radialGradient id="circle-gradient" cx="50%" cy="50%" fx="85%" fy="60%" r="70%">
+            <stop offset="0%" stop-color="#5B5B5B"></stop>
+            <stop offset="100%" stop-color="black"></stop>
+        </radialGradient>
+        <radialGradient id="display-gradient" cx="130%" cy="110%" r="250%">
+            <stop offset="0%" stop-color="black"></stop>
+            <stop offset="50%" stop-color="black"></stop>
+            <stop offset="50%" stop-color="#3C3C3C"></stop>
+            <stop offset="100%" stop-color="#3C3C3C"></stop>
+        </radialGradient>
+        <path d="M145,175 c 80 10, 60 55, 125, 55"
+              fill="none" id="text-path"></path>
+        <defs>
+    </defs>
+</svg>
+
+</body>
+</html>
